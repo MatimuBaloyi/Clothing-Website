@@ -42,5 +42,5 @@ The project was built using:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/fashion-emporium.git
+   git clone https://github.com/MatimuBaloyi/Clothing-Website.git
    ```
