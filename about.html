@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>N.an.N - About Us</title>
+
+   
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/stylesheet2.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+ 
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+      }
+
+      /* Styling for the pop-up button */
+      .popup-button {
+          position: fixed;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          background-color: #ff6961;
+          color: #fff;
+          padding: 15px;
+          border: none;
+          cursor: pointer;
+          z-index: 999;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+      }
+
+      /* Styling for the pop-up content (hidden by default) */
+      .popup-content {
+          display: none;
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 300px;
+          height: 100%;
+          background-color: #fff;
+          box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+          overflow-y: auto;
+          z-index: 998;
+      }
+
+      /* Style for close button inside the pop-up content */
+      .close-button {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+      }
+
+      /* Style for social media link */
+      .social-link {
+          display: block;
+          margin-top: 20px;
+      }
+      /* Style the Sticky icons on web page */   
+.stickyicon-list {   
+position: fixed;   
+top: 200px;   
+transform: translateY(-50%);             
+}         
+.stickyicon-list a {   
+display: block;   
+text-align: center;   
+padding: 8px;   
+transition: all 0.5s ease;   
+color: white;   
+font-size: 20px;   
+}         
+/* HOver affect on sticky social media icons */   
+.stickyicon-list a:hover {   
+color: #000;   
+width:10px;   
+}   
+   
+/* Now we have to design each icon of social media */         
+.facebook {   
+background: #3b5998;   
+color: white;  
+}         
+.twitter {   
+color: white;   
+background: #070707;   
+}   
+.linkedin {   
+background: #0e76a8;   
+color: white;   
+}         
+.google {   
+color: white;   
+background: #db4a39;   
+}   
+.instagram {   
+background: #3f729b;   
+color: white;   
+}         
+.youtube {   
+color: white;   
+background: #c4302b;    
+}   
+  </style>
+</head>
+<body>
+
+  <!-- Pop-up button -->
+  <button class="popup-button" onclick="openFormInNewTab()">Feedback</button>
+
+  <!-- Pop-up content -->
+  <div class="popup-content">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRogTCOP-VcU5DHFDwqtMPPIAdMM-WjXWDW6O2b75CEzKLaQ/viewform?embedded=true" 
+              width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <span class="close-button" onclick="togglePopup()">X</span>
+      
+      <!-- TikTok link with Font Awesome icon -->
+      <a href="https://www.tiktok.com/" class="social-link" target="_blank">
+          <i class="fab fa-tiktok"></i> Follow us on TikTok
+      </a>
+  </div>
+
+  <script>
+      // Function to open the form in a new tab
+      function openFormInNewTab() {
+          window.open('https://docs.google.com/forms/d/e/1FAIpQLSeRogTCOP-VcU5DHFDwqtMPPIAdMM-WjXWDW6O2b75CEzKLaQ/viewform?embedded=true', '_blank');
+      }
+
+      // Toggle visibility of the pop-up content
+      function togglePopup() {
+          var popup = document.querySelector('.popup-content');
+          popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
+      }
+  </script>
+
+
+   
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+   
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                     
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                     
+                    <ul class="nav">
+                      <li><a><div class="main">
+                       <!-- Another variation with a button -->
+                       <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search Clothes">
+                          <div class="input-group-append">
+                             <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                             <i class="fa fa-search"></i>
+                             </button>
+                          </div>
+                       </div>
+                    </div></a> </a></li>
+
+                     <li><a href="about.html">About</a></li>
+
+
+                     <li><a href="deals.html">Buy Clothes</a></li>
+
+                     <li><a href="sign.html">
+                       <i class="fa fa-user" aria-hidden="true"></i>
+                       <span class="padding_10">Login</span></a>
+                    </li>
+
+                     <li><a href="cart.html">
+                       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                       <span class="padding_10">Cart</span></a>
+                    </li>
+
+
+                    
+
+                     
+                 </ul>  
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                     
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+   
+  <div class="stickyicon-list">  
+    <a href="https://www.facebook.com/profile.php?id=100072418875287" class="facebook">   
+    <i class="fab fa-facebook"></i>   
+    </a>   
+    <a href="https://www.tiktok.com/@natashazulu_" class="twitter">   
+    <i class="fab fa-tiktok"></i>   
+    </a>       
+    <a href="https://www.youtube.com/@zulunatasha/videos" class="linkedin">   
+    <i class="fab fa-linkedin"></i>   
+    </a>   
+    <a href="mailtonatashazulu@gmail.com" class="google">   
+    <i class="fab fa-google"></i>   
+    </a>     
+    <a href="https://www.instagram.com/nn_capsulecollection/" class="instagram">   
+    <i class="fab fa-instagram"></i>   
+    </a>                              
+    <a href="https://www.youtube.com/@zulunatasha/videos" class="youtube">   
+    <i class="fab fa-youtube"></i>   
+    </a>   
+    </div>
+
+
+  <div class="about-main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content">
+            <div class="blur-bg"></div>
+            
+            
+            <h2>Who we are</h2>
+            <div class="line-dec"></div>
+            <p>We are a proudly South African clothing brand that emerged from the creative vision of Natasha Zulu and Ntsebeng Ntlahake, both students in the Fashion Design program at Vaal University of Technology. Founded in 2023, this brand represents a unique fusion of South African cultures, seamlessly blending Zulu and Sotho influences with contemporary fashion. </p>
+            <div class="main-button">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  
+  <div class="cities-town">
+    <div class="container">
+      <div class="row">
+        <div class="slider-content">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Products <em>We Offer</em></h2>
+            </div>
+            <div class="col-lg-12">
+              <div class="owl-cites-town owl-carousel">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/cities-01.jpg" alt="">
+                    <h2><span>Trousers</span><em></em></h2>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/cities-02.jpg" alt="">
+                    <h2><span></span><em>T-Shirts</em></h2>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/cities-03.jpg" alt="">
+                    <h2><span></span><em>Dresses</em></h2>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/cities-04.jpg" alt="">
+                    <h2><span></span><em>Jackets</em></h2>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="weekly-offers">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading text-center">
+            <h2>Best Weekly Offers In Each Department</h2>
+            <p>What sets N.an.N apart is its accessibility. Whether you're on the go or relaxing at home, our website is at your fingertips 24/7. Simply use your smartphone or PC to explore our stylish offerings. Rest assured, our platform is designed with security in mind, ensuring a safe and enjoyable shopping experience. We've implemented age restrictions to safeguard against unauthorized transactions, prioritizing the security of both young users and their parents' financial accounts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-weekly-offers owl-carousel">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-01.jpg" alt="">
+                <div class="text">
+                  <h4>Suits<br><span><i class=" "></i> 4 Left </span></h4>
+                  <h6>R4200<br><span> </span></h6>
+                  <div class="line-dec"></div>
+                  
+                  <div class="main-button">
+                    <a href="cart.html">Make an order</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-02.jpg" alt="">
+                <div class="text">
+                  <h4>Boys<br>Shirts<br><span> 24 Left</span></h4>
+                  <h6>R420<br></h6>
+                  <div class="line-dec"></div>
+                 
+                  <div class="main-button">
+                    <a href="deals.html">Make an order </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-03.jpg" alt="">
+                <div class="text">
+                  <h4>Girls<br>Shirts<br><span><i class=" "></i> 4 Left</span></h4>
+                  <h6>R270<br> </h6>
+                  <div class="line-dec"></div>
+                  
+                  <div class="main-button">
+                    <a href="deals.html">Make an order</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-01.jpg" alt="">
+                <div class="text">
+                  <h4>Jacket<br><span> 2 Left</span></h4>
+                  <h6>R599.99<br></h6>
+                  <div class="line-dec"></div>
+                 
+                  <div class="main-button">
+                    <a href="deals.html">Buy Jacket</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+               <img src="assets/images/cities-04.jpg" alt="">
+                   <div class="text">
+                  <h4>Jacket<br><span> 6 Left</span></h4>
+                  <h6>R1700<br></h6>
+                  <div class="line-dec"></div>
+                 
+                  <div class="main-button">
+                    <a href="deals.html">Buy Women Jackets </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-03.jpg" alt="">
+                <div class="text">
+                  <h4>Shirts<br><span> 9 Left</span></h4>
+                  <h6>R120<br></h6>
+                  <div class="line-dec"></div>
+                 
+                  <div class="main-button">
+                    <a href="deals.html">Buy Shirts </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section contact-section" id="section-contact">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-7">
+            <h2 class="heading" data-aos="fade-up">Contact Us</h2>
+            <p data-aos="fade-up">N.an.N</p>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+          
+          <form method="post" class="bg-white p-md-5 p-4 mb-5 border">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control ">
+              </div>
+              <div class="col-md-6 form-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" class="form-control ">
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control ">
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-12 form-group">
+                <label for="message">Write Message</label>
+                <textarea name="message" name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="main-button">
+                <input type="submit" value="Send Message" class="btn btn-primary text-white font-weight-bold">
+                <div class="submitting"></div>
+              </div>
+            </div>
+
+           
+          </form>
+
+          
+
+        </div>
+        <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="row">
+            <div class="col-md-10 ml-auto contact-info">
+              <p><span class="d-block">Address:</span> <span class="text-black"> 12 Pallas Street <br>BedworthPark <br>Vereeniging<br> 1939</span></p>
+              <p><span class="d-block">Phone:</span> <span class="text-black"> (+27) 084 019 6595</span></p>
+              <p><span class="d-block">Email:</span> <span class="text-black"> info@naan.co.za</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="more-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="left-image">
+            <img src="assets/images/about-left-image.jpg" alt="">
+             
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>Discover More About Our Brand</h2>
+            <p>Your goals are our goals. Whether it's a functional win, an emotional high, or a social shout-out, N.an.N is here to make your user experience a triumph. Buy with ease, be inspired, and share the love – it's all about you!</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-item">
+                <h4>200 +</h4>
+                <span>Total Clients Monthly</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              
+            </div>
+            <div class="col-lg-12">
+              <div class="info-item">
+               
+              </div>
+            </div>
+          </div>
+          <p>We're not just making it popular; we're making it your go-to style haven. Accessibility meets popularity, and satisfaction is the name of our game.</p>
+          <div class="main-button">
+            <a href="reservation.html">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="best-locations">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+           
+        </div>
+       
+           
+                  
+               </div>
+            </div>
+         </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="main-button text-center">
+            <a href="sign.html">Get Started</a>
+       
+        
+                <div id="">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28512.800998164428!2d27.838770013712665!3d-26.709248141274713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e94590026a51ed3%3A0xe5fbb6deb9c8cdb7!2sBedworth%20Park%2C%20Vereeniging%2C%201939!5e0!3m2!1sen!2sza!4v1699988735994!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+           
+        </div>
+        <div class="col-lg-4">
+          <div class="border-button">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+         <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="#">N.an.N</a> Clothing. All rights reserved. 
+          <br>Design: <a href="https://www.youtube.com/@baloyi6105" target="_blank" title="Mbaloyi">baloyi</a></p>
+       
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(".option").click(function(){
+      $(".option").removeClass("active");
+      $(this).addClass("active"); 
+    });
+  </script>
+
+  </body>
+
+</html>
